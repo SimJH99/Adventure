@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Traps
+  - Start
+  - Platforms
+  - Enemy
+  - Item
+  - BackGround
+  - Ground
+  - Trampoline
+  - JumpTrigger
   layers:
   - Default
   - TransparentFX
@@ -11,7 +20,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -40,4 +49,28 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1203214843
+    locked: 0
+  - name: Ground
+    uniqueID: 1674780855
+    locked: 0
+  - name: Text
+    uniqueID: 2514479991
+    locked: 0
+  - name: Platform
+    uniqueID: 908634057
+    locked: 0
+  - name: Trap
+    uniqueID: 413609701
+    locked: 0
+  - name: Enemy
+    uniqueID: 3776517997
+    locked: 0
+  - name: Item
+    uniqueID: 1069037465
+    locked: 0
+  - name: Player
+    uniqueID: 1674219715
     locked: 0

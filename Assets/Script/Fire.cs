@@ -21,7 +21,7 @@ public class Fire : MonoBehaviour
 
     void FirePatten()
     {
-        hitTime += Time.fixedDeltaTime;
+        hitTime += Time.smoothDeltaTime;
 
         ani.SetFloat("Time", hitTime);
 

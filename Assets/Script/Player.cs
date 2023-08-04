@@ -61,7 +61,6 @@ public class Player : MonoBehaviour
             moveDir.y = rigid.velocity.y;
             rigid.velocity = moveDir;
         }
-
     }
 
 
@@ -168,9 +167,6 @@ public class Player : MonoBehaviour
             isDoubleJump = true;
             isWallJump = false;
             rigid.velocity = new Vector2(rigid.velocity.x, rigid.velocity.y * slidingSpeed);
-
-            //º®Á¡ÇÁ
-            //if (Input.GetAxis("Jump") != 0)
         }
 
         
@@ -179,7 +175,6 @@ public class Player : MonoBehaviour
             isWallJump = true;
             Invoke("FreezeX", 0.3f);
             rigid.AddForce(new Vector2(-isRight * wallJumpPower, 0.9f * wallJumpPower), ForceMode2D.Impulse);
-            //rigid.velocity = new Vector2(-isRight * wallJumpPower, 0.9f * wallJumpPower);
             FlipPlayer();
         }
     }

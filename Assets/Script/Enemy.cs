@@ -42,10 +42,10 @@ public class Enemy : MonoBehaviour
         Vector2 frontVec = new Vector2(rigid.position.x + nextMove * 0.3f, rigid.position.y);
         Debug.DrawRay(frontVec, Vector3.down, new Color(0, 1, 0));
         RaycastHit2D rayhit = Physics2D.Raycast(frontVec, Vector3.down, 1, LayerMask.GetMask("Ground"));
-        //if (rayhit.collider == null)
-        //{
-        //    Turn();
-        //}
+        if (rayhit.collider == null)
+        {
+            Turn();
+        }
     }
 
     //행동 결정 좌,우 이동 or 서있기 //재귀함수
@@ -90,52 +90,3 @@ public class Enemy : MonoBehaviour
         }
     }
 }
-//private void OnTriggerEnter2D(Collider2D collision)
-//{
-//    if (collision.gameObject.tag == "Player")
-//    {
-//        traceTarget = collision.gameObject;
-
-//        StopCoroutine("Think");
-//    }
-//}
-
-//private void OnTriggerStay2D(Collider2D collision)
-//{
-//    if (collision.gameObject.tag == "Player")
-//    {
-//        isTracing = true;
-//    }
-//}
-
-//private void OnTriggerExit2D(Collider2D collision)
-//{
-//    if (collision.gameObject.tag == "Player")
-//    {
-//        isTracing = false;
-//        StartCoroutine("Think");
-//    }
-//}
-
-//void Trace()
-//{
-//    Vector3 moveVelocity = Vector3.zero;
-
-//    if (isTracing == true)
-//    {
-//        StopCoroutine("Think");
-//        Vector3 playerPos = traceTarget.transform.position;
-
-//        if (playerPos.x < transform.position.x)
-//        {
-//            moveVelocity = new Vector2(-1, rigid.velocity.y);
-//            //ani.SetInteger("Walk", -1);
-//        }
-//        else if (playerPos.x > transform.position.x)
-//        {
-//            moveVelocity = new Vector2(1, rigid.velocity.y);
-//        }
-//    }
-
-//    transform.position += moveVelocity * Time.deltaTime;
-//}
