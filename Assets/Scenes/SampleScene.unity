@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 10458950}
   - component: {fileID: 10458949}
   - component: {fileID: 10458948}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Bananas (4)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 74822921}
   - component: {fileID: 74822920}
   - component: {fileID: 74822919}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (11)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -1129,7 +1129,7 @@ GameObject:
   - component: {fileID: 126520207}
   - component: {fileID: 126520206}
   - component: {fileID: 126520205}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (4)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -1241,7 +1241,7 @@ GameObject:
   - component: {fileID: 145452815}
   - component: {fileID: 145452814}
   - component: {fileID: 145452813}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spiked Ball
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 147723556}
   - component: {fileID: 147723555}
   - component: {fileID: 147723554}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (6)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1478,7 +1478,7 @@ GameObject:
   - component: {fileID: 178420867}
   - component: {fileID: 178420866}
   - component: {fileID: 178420865}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (2)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -1838,7 +1838,7 @@ GameObject:
   - component: {fileID: 241124449}
   - component: {fileID: 241124448}
   - component: {fileID: 241124447}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (9)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -1959,7 +1959,7 @@ GameObject:
   - component: {fileID: 260303177}
   - component: {fileID: 260303176}
   - component: {fileID: 260303175}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (9)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -2313,7 +2313,7 @@ GameObject:
   - component: {fileID: 367078295}
   - component: {fileID: 367078294}
   - component: {fileID: 367078293}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (2)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -2978,7 +2978,7 @@ GameObject:
   - component: {fileID: 467174640}
   - component: {fileID: 467174639}
   - component: {fileID: 467174638}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (12)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -33932,7 +33932,7 @@ GameObject:
   - component: {fileID: 516605824}
   - component: {fileID: 516605823}
   - component: {fileID: 516605822}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Bananas (1)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -34334,9 +34334,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8857702c454844d984e6a0c39d55f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPoint: {x: 21.25, y: 3.381, z: 0}
   target: {fileID: 1911277926}
   gameMng: {fileID: 56164153}
-  spawnPoint: {x: 21.25, y: 3.381, z: 0}
   raidus: 2.1
   speed: 0.1
 --- !u!58 &553691965
@@ -34393,7 +34393,7 @@ GameObject:
   - component: {fileID: 556009819}
   - component: {fileID: 556009818}
   - component: {fileID: 556009817}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Bananas (2)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -34514,7 +34514,7 @@ GameObject:
   - component: {fileID: 559821518}
   - component: {fileID: 559821517}
   - component: {fileID: 559821516}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (13)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -34626,7 +34626,7 @@ GameObject:
   - component: {fileID: 567386963}
   - component: {fileID: 567386962}
   - component: {fileID: 567386961}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Bananas (6)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -34811,9 +34811,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f8857702c454844d984e6a0c39d55f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnPoint: {x: 25.31, y: 0.4, z: 0}
   target: {fileID: 1911277926}
   gameMng: {fileID: 56164153}
-  spawnPoint: {x: 25.31, y: 0.4, z: 0}
   raidus: 2.1
   speed: 0.1
 --- !u!58 &598833485
@@ -35320,7 +35320,7 @@ GameObject:
   - component: {fileID: 741372011}
   - component: {fileID: 741372014}
   - component: {fileID: 741372012}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (2)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -35431,7 +35431,7 @@ GameObject:
   - component: {fileID: 742365292}
   - component: {fileID: 742365291}
   - component: {fileID: 742365290}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (3)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -35542,7 +35542,7 @@ GameObject:
   - component: {fileID: 766703139}
   - component: {fileID: 766703138}
   - component: {fileID: 766703137}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (5)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -35804,7 +35804,7 @@ GameObject:
   - component: {fileID: 800338044}
   - component: {fileID: 800338043}
   - component: {fileID: 800338042}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (4)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -36072,7 +36072,7 @@ GameObject:
   - component: {fileID: 834413960}
   - component: {fileID: 834413959}
   - component: {fileID: 834413958}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Bananas (5)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -36271,7 +36271,7 @@ GameObject:
   - component: {fileID: 865398530}
   - component: {fileID: 865398529}
   - component: {fileID: 865398528}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (8)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -36504,7 +36504,7 @@ GameObject:
   - component: {fileID: 895710005}
   - component: {fileID: 895710004}
   - component: {fileID: 895710003}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (15)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -68732,7 +68732,7 @@ GameObject:
   - component: {fileID: 952587145}
   - component: {fileID: 952587147}
   - component: {fileID: 952587146}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72547,7 +72547,7 @@ GameObject:
   - component: {fileID: 1084256251}
   - component: {fileID: 1084256250}
   - component: {fileID: 1084256249}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Apple (3)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -72882,7 +72882,7 @@ GameObject:
   - component: {fileID: 1126355772}
   - component: {fileID: 1126355775}
   - component: {fileID: 1126355773}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (1)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -73132,7 +73132,7 @@ GameObject:
   - component: {fileID: 1177846041}
   - component: {fileID: 1177846044}
   - component: {fileID: 1177846045}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trampoline
   m_TagString: Trampoline
   m_Icon: {fileID: 0}
@@ -73275,7 +73275,7 @@ GameObject:
   - component: {fileID: 1194868858}
   - component: {fileID: 1194868861}
   - component: {fileID: 1194868859}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (3)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -73717,7 +73717,7 @@ GameObject:
   - component: {fileID: 1258101003}
   - component: {fileID: 1258101002}
   - component: {fileID: 1258101001}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Apple (2)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -73838,7 +73838,7 @@ GameObject:
   - component: {fileID: 1280060778}
   - component: {fileID: 1280060777}
   - component: {fileID: 1280060776}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (8)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -105463,7 +105463,7 @@ GameObject:
   - component: {fileID: 1349639394}
   - component: {fileID: 1349639393}
   - component: {fileID: 1349639396}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -106391,7 +106391,7 @@ GameObject:
   - component: {fileID: 1366716480}
   - component: {fileID: 1366716479}
   - component: {fileID: 1366716478}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (1)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -106811,7 +106811,7 @@ GameObject:
   - component: {fileID: 1423966511}
   - component: {fileID: 1423966510}
   - component: {fileID: 1423966509}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (6)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -107527,7 +107527,7 @@ GameObject:
   - component: {fileID: 1487241334}
   - component: {fileID: 1487241333}
   - component: {fileID: 1487241332}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (3)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -110628,7 +110628,7 @@ GameObject:
   - component: {fileID: 1571236092}
   - component: {fileID: 1571236091}
   - component: {fileID: 1571236090}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Trampoline (1)
   m_TagString: Trampoline
   m_Icon: {fileID: 0}
@@ -110772,7 +110772,7 @@ GameObject:
   - component: {fileID: 1609291624}
   - component: {fileID: 1609291626}
   - component: {fileID: 1609291627}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Apple
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -111086,7 +111086,7 @@ GameObject:
   - component: {fileID: 1617956289}
   - component: {fileID: 1617956288}
   - component: {fileID: 1617956287}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -111350,7 +111350,7 @@ GameObject:
   - component: {fileID: 1668435694}
   - component: {fileID: 1668435693}
   - component: {fileID: 1668435696}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spiked Ball
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -142335,7 +142335,7 @@ GameObject:
   - component: {fileID: 1675908063}
   - component: {fileID: 1675908062}
   - component: {fileID: 1675908061}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (1)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -146690,7 +146690,7 @@ GameObject:
   - component: {fileID: 1761764867}
   - component: {fileID: 1761764866}
   - component: {fileID: 1761764865}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Bananas (3)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -146896,7 +146896,7 @@ GameObject:
   - component: {fileID: 1784682847}
   - component: {fileID: 1784682849}
   - component: {fileID: 1784682850}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Bananas
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -147163,7 +147163,7 @@ GameObject:
   - component: {fileID: 1875808384}
   - component: {fileID: 1875808383}
   - component: {fileID: 1875808382}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (7)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -147736,7 +147736,7 @@ GameObject:
   - component: {fileID: 1919946556}
   - component: {fileID: 1919946555}
   - component: {fileID: 1919946554}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (7)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -147965,7 +147965,7 @@ GameObject:
   - component: {fileID: 1994090338}
   - component: {fileID: 1994090337}
   - component: {fileID: 1994090336}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (17)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -148076,7 +148076,7 @@ GameObject:
   - component: {fileID: 2006777996}
   - component: {fileID: 2006777995}
   - component: {fileID: 2006777994}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (14)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -148267,7 +148267,7 @@ GameObject:
   - component: {fileID: 2041938438}
   - component: {fileID: 2041938437}
   - component: {fileID: 2041938436}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (10)
   m_TagString: Traps
   m_Icon: {fileID: 0}
@@ -148864,7 +148864,7 @@ GameObject:
   - component: {fileID: 2126987933}
   - component: {fileID: 2126987932}
   - component: {fileID: 2126987931}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Cherries (5)
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -148985,7 +148985,7 @@ GameObject:
   - component: {fileID: 2129840045}
   - component: {fileID: 2129840044}
   - component: {fileID: 2129840043}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spike (16)
   m_TagString: Traps
   m_Icon: {fileID: 0}
