@@ -14,7 +14,7 @@ public class Fire : MonoBehaviour
         ani = GetComponent<Animator>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         FirePatten();
     }

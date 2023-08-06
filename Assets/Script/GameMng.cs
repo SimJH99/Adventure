@@ -11,6 +11,7 @@ public class GameMng : MonoBehaviour
     [SerializeField] TextMeshProUGUI UIPoint;
     [SerializeField] TextMeshProUGUI UIStage;
     [SerializeField] TextMeshProUGUI Text_Timer;
+    [SerializeField] GameObject Congrauration;
     [SerializeField] GameObject UIRestartBtn;
 
     public Player player;
@@ -41,7 +42,7 @@ public class GameMng : MonoBehaviour
     //다음 스테이지 넘어가기
     public void NextStage()
     {
-        if (stageIndex < Stages.Length + 1)
+        if (stageIndex < Stages.Length)
         {
             Stages[stageIndex].SetActive(false);
             stageIndex++;
@@ -90,6 +91,7 @@ public class GameMng : MonoBehaviour
     private void ViewBtn()
     {
         UIRestartBtn.SetActive(true);
+        Congrauration.SetActive(true);
     }
 
     //게임 재시작

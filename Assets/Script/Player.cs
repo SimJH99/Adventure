@@ -11,7 +11,8 @@ public class Player : MonoBehaviour
     public Rigidbody2D rigid;
     public Animator ani;
 
-    [SerializeField] Enemy enemy;
+    [SerializeField] Enemy[] enemy;
+    [SerializeField] Snail[] snail;
     [SerializeField] GameMng gameMng;
     [SerializeField] float jumpPower;
     [SerializeField] float moveSpeed;
@@ -66,7 +67,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Dead();
+            ani.SetTrigger("Hit");
         }
     }
 
@@ -77,7 +78,11 @@ public class Player : MonoBehaviour
             gameMng.NextStage();
             gameMng.stagePoint += 500;
         }
-        else if (collision.gameObject.tag == "Traps" || collision.gameObject.tag == "DeathZone")
+        else if (collision.gameObject.tag == "Traps")
+        {
+            ani.SetTrigger("Hit");
+        }
+        else if (collision.gameObject.tag == "DeathZone")
         {
             Dead();
         }
@@ -141,7 +146,6 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isJumping == true)
         {
-            Debug.Log("input Jump");
             moveDir.y = jumpPower;
             rigid.velocity = moveDir;
             jumpCount--;
@@ -191,8 +195,36 @@ public class Player : MonoBehaviour
             transform.position = gameMng.StartPoints[gameMng.startIndex].transform.position;
         }
         gameObject.SetActive(true);
-
         gameMng.deathPoint -= 100;
-        enemy.Respawn();
+
+        //2stage 적 스폰
+        if (gameMng.Stages[1].gameObject.activeSelf == true)
+        {
+            for (int i = 0; i < enemy.Length - 1; i++)
+            {
+                if (enemy[i].gameObject.activeSelf == false)
+                {
+                    enemy[i].Respawn();
+                }
+            }
+        }
+
+
+        //3stage 적 스폰
+        if (gameMng.Stages[2].gameObject.activeSelf == true)
+        {
+            if (snail[0].gameObject.activeSelf == false)
+            {
+                snail[0].Respawn();
+            }
+            if (snail[1].gameObject.activeSelf == false)
+            {
+                snail[1].Respawn();
+            }
+            if (enemy[2].gameObject.activeSelf == false)
+            {
+                enemy[2].Respawn();
+            }
+        }
     }
 }

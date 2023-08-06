@@ -8,8 +8,9 @@ public class Snail : MonoBehaviour
 {
     Animator ani;
     Rigidbody rigid;
-    SpriteRenderer sprite;
     [SerializeField] GameObject target;
+    [SerializeField] GameMng gameMng;
+    [SerializeField] Vector3 spawnPoint;
     [SerializeField] float raidus;
     [SerializeField] float speed;
 
@@ -19,13 +20,13 @@ public class Snail : MonoBehaviour
     {
         ani = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody>();
-        sprite = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         PlayerCheck();
-        Trace();
+
+        //isTrace = Physics2D.CircleCast(transform.position, raidus, Vector2.right);
     }
 
     private void OnDrawGizmos()
@@ -34,36 +35,59 @@ public class Snail : MonoBehaviour
         Gizmos.DrawSphere(transform.position, raidus);
     }
 
-    //플레이어 체크
-    //플레이어 추적
-    //애니메이션
-    //사망
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "JumpTrigger")
+        {
+            ani.SetTrigger("Hit");
+        }
+    }
 
     void PlayerCheck()
     {
         RaycastHit2D rayhit = Physics2D.CircleCast(transform.position, raidus, Vector2.right,1, LayerMask.GetMask("Player"));
         if (rayhit.collider != null)
         {
-            isTrace = true;
+            Trace();
+        }
+        else
+        {
+            ani.SetBool("Run", false);
         }
     }
 
     void Trace()
     {
-        if (isTrace)
+        Vector3 playerPos = target.transform.position;
+        Vector3 pos = target.transform.position - transform.position;
+
+        //이동에 따른 방향 회전
+        if (playerPos.x > transform.position.x)
         {
-            Vector3 playerPos= target.transform.position;
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+            ani.SetBool("Run", true);
+        }
+        else if (playerPos.x < transform.position.x)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+            ani.SetBool("Run", true);
+        }
 
-            if (playerPos.x > transform.position.x)
-            {
-                transform.localScale = new Vector3(1f, 1f, 1f);
-            }
-            else if (playerPos.x < transform.position.x)
-            {
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-            }
+        transform.position += pos * speed * Time.fixedDeltaTime;
+    }
 
-            transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.fixedDeltaTime);
+    void Dead()
+    {
+        gameObject.SetActive(false);
+        gameMng.killPoint += 300;
+    }
+
+    public void Respawn()
+    {
+        if (gameObject.activeSelf == false)
+        {
+            gameObject.SetActive(true);
+            transform.localPosition = spawnPoint;
         }
     }
 }
