@@ -13,6 +13,7 @@ TagManager:
   - Ground
   - Trampoline
   - JumpTrigger
+  - DeathZone
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Player
   - 
   - 
   - 

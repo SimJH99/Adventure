@@ -44,8 +44,6 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
-        ObjectOutCamera();
-        
         WallJump();
 
         //벽 체크하기
@@ -79,7 +77,7 @@ public class Player : MonoBehaviour
             gameMng.NextStage();
             gameMng.stagePoint += 500;
         }
-        else if (collision.gameObject.tag == "Traps")
+        else if (collision.gameObject.tag == "Traps" || collision.gameObject.tag == "DeathZone")
         {
             Dead();
         }
@@ -174,23 +172,13 @@ public class Player : MonoBehaviour
         {
             isWallJump = true;
             Invoke("FreezeX", 0.3f);
-            rigid.AddForce(new Vector2(-isRight * wallJumpPower, 0.9f * wallJumpPower), ForceMode2D.Impulse);
+            rigid.AddForce(new Vector2(-isRight * wallJumpPower, wallJumpPower), ForceMode2D.Impulse);
             FlipPlayer();
         }
     }
     void FreezeX()
     {
         isWallJump = false;
-    }
-
-    //맵 밑으로 떨어졌을 때 사망
-    private void ObjectOutCamera()
-    {
-        Vector3 CamOut = Camera.main.WorldToViewportPoint(transform.position);
-        if (CamOut.x < -0f || CamOut.x > 1f || CamOut.y < -0f || CamOut.y > 1f)
-        {
-            Dead();
-        }
     }
 
     //죽었을 때 스타트위치로 초기화
