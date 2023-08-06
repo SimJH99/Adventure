@@ -14,11 +14,11 @@ public class JumpTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //¶¥, ÇÃ·§Æû, ½ÃÀÛÁöÁ¡¿¡ ÂøÁö ½Ã, Á¡ÇÁ °¡´É
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag
             == "Platforms" || collision.gameObject.tag == "Start")
         {
             player.isJumping = true;
-            //player.isDoubleJump = false;
             player.jumpCount = 2;
             player.ani.SetBool("Jump", false);
             player.ani.SetBool("DoubleJump", false);

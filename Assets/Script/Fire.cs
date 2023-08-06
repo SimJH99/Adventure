@@ -19,6 +19,7 @@ public class Fire : MonoBehaviour
         FirePatten();
     }
 
+    //시간에 따라 애니메이션 순서대로 실행
     void FirePatten()
     {
         hitTime += Time.smoothDeltaTime;

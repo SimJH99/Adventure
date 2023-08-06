@@ -42,7 +42,7 @@ public class GameMng : MonoBehaviour
     //다음 스테이지 넘어가기
     public void NextStage()
     {
-        if (stageIndex < Stages.Length)
+        if (stageIndex < Stages.Length + 1)
         {
             Stages[stageIndex].SetActive(false);
             stageIndex++;
@@ -50,6 +50,7 @@ public class GameMng : MonoBehaviour
             PlayerReposition();
         }
 
+        //게임 클리어 시
         if (Stages[stageIndex] == Stages[3])
         {
             player.gameObject.SetActive(false);
@@ -61,7 +62,7 @@ public class GameMng : MonoBehaviour
         stagePoint = 0;
     }
 
-    //스테이지 넘어갈때 스타트지점 설정
+    //스테이지 넘어갈때 시작지점 설정
     void PlayerReposition()
     {
         if (startIndex < StartPoints.Length)
@@ -119,6 +120,7 @@ public class GameMng : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    //게임 종료
     void GameQuit()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

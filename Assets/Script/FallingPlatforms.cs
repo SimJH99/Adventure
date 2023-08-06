@@ -27,6 +27,13 @@ public class FallingPlatforms : MonoBehaviour
         ObjectOutCamera();
         Respwan();
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "JumpTrigger")
+        {
+            StartCoroutine(Falling());
+        }
+    }
 
     //ÇÃ·§ÆûÀÌ ¶³¾îÁü.
     IEnumerator Falling()
@@ -49,13 +56,6 @@ public class FallingPlatforms : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "JumpTrigger")
-        {
-            StartCoroutine(Falling());
-        }
-    }
 
     //ÇÃ·§ÆûÀÌ ¸Ê¹ÛÀ¸·Î ³ª°¬À» ¶§, ¸®½ºÆù
     private void ObjectOutCamera()

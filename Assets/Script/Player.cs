@@ -69,6 +69,7 @@ public class Player : MonoBehaviour
         {
             ani.SetTrigger("Hit");
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

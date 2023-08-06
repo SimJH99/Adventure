@@ -24,5 +24,4 @@ public class Trampoline : MonoBehaviour
         ani.SetTrigger("Touch");
         ani.SetTrigger("Idle");
     }
-
 }
