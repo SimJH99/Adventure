@@ -209,7 +209,6 @@ public class Player : MonoBehaviour
             }
         }
 
-
         //3stage Àû ½ºÆù
         if (gameMng.Stages[2].gameObject.activeSelf == true)
         {

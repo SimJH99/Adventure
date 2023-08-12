@@ -13,8 +13,6 @@ public class Snail : MonoBehaviour
     [SerializeField] float raidus;
     [SerializeField] float speed;
 
-    bool isTrace;
-
     private void Awake()
     {
         ani = GetComponent<Animator>();
